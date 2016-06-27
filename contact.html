@@ -1,0 +1,27 @@
+---
+layout: page
+title: contact
+permalink: /contact/
+custom_css: contact
+---
+
+<div class="contact">
+    <form action="https://formspree.io/your@email.com" method="POST">
+        <p>
+            <label for="name">Name</label>
+            <input type="text" name="name">
+        </p>
+
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="_replyto">
+        </p>
+        <p>
+            <label for="message">Message</label>
+            <textarea name="message"></textarea>
+        </p>
+        <input type="submit" value="Send">
+        <input type="hidden" name="_next" value="/contact/?success=1" />
+        <input type="hidden" name="_subject" value="Request" />
+    </form>
+</div>
