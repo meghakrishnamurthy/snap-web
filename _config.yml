@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Megha Krishnamurthy Photography
+title: MK Photography
 email: maggie9in@gmail.com
 description: Passionate photographer for portrait, scenic, events, parties, birthdays, weddings, portfolio, candid and many more styles.
 baseurl: ""
 url: "http://meghaphotography.com" # the base hostname & protocol for your site
 twitter_username:
-github_username:  
+github_username:
 
 # Build settings
 markdown: kramdown
