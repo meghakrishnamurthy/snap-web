@@ -1,0 +1,19 @@
+---
+---
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input:not([type="submit"]), textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #CCC;
+    border-radius: 2px;
+}
+
+textarea {
+    min-height: 120px;
+    border: 1px solid #CCC;
+}
