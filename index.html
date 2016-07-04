@@ -3,33 +3,39 @@ layout: page
 title: home
 permalink: /
 images:
-  - image_path: /images/1.jpg
+  - image_path: /images/candid/1.jpg
     title: 1
-  - image_path: /images/2.jpg
+  - image_path: /images/candid/2.jpg
     title: 2
-  - image_path: /images/3.jpg
+  - image_path: /images/candid/3.jpg
     title: 3
-  - image_path: /images/4.jpg
+  - image_path: /images/candid/4.jpg
     title: 4
-  - image_path: /images/5.jpg
+  - image_path: /images/candid/5.jpg
     title: 5
-  - image_path: /images/6.jpg
+  - image_path: /images/candid/6.jpg
     title: 6
-  - image_path: /images/7.jpg
+  - image_path: /images/candid/7.jpg
     title: 7
-  - image_path: /images/8.jpg
+  - image_path: /images/candid/8.jpg
     title: 8
-  - image_path: /images/9.jpg
+  - image_path: /images/candid/9.jpg
     title: 9
 custom_css: home
+custom_js:
+    - gallery
+    - home
 ---
 
 <div class="home">
-    <ul class="photo-gallery">
-      {% for image in page.images %}
-        <li>
-            <img src="{{site.baseurl}}{{ image.image_path }}" alt="{{ image.title}}"/>
-        </li>
-      {% endfor %}
-    </ul>
+    <div class="photo-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        {% for image in page.images %}
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="{{site.baseurl}}{{image.image_path}}" itemprop="contentUrl" data-size="600x400">
+                    <img src="{{site.baseurl}}{{ image.image_path}}" itemprop="thumbnail" alt="{{image.title}}" />
+                </a>
+                <figcaption itemprop="caption description">{{image.title}}</figcaption>
+            </figure>
+        {% endfor %}
+    </div>
 </div>
