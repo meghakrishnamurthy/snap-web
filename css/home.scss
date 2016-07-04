@@ -1,16 +1,22 @@
 ---
 ---
 .photo-gallery {
-    list-style: none;
-    padding: 0;
+    width: 100%;
+    float: left;
 
-    li {
-        width: 33%;
-        display: inline-block;
+    img {
+        width: 100%;
+        height: auto;
+    }
 
-        > img {
-            max-width: 100%;
-            height: auto;
-        }
+    figure {
+      display: block;
+      float: left;
+      margin: 0 5px 5px 0;
+      width: 150px;
+    }
+
+    figcaption {
+      display: none;
     }
 }
