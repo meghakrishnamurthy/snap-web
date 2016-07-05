@@ -1,1 +1,3 @@
-initPhotoSwipeFromDOM('.photo-gallery');
+(function() {
+    initPhotoSwipeFromDOM('.photo-gallery');
+})();
