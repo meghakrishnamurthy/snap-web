@@ -3,6 +3,7 @@ layout: page
 title: contact
 permalink: /contact/
 custom_css: contact
+show_title: true
 ---
 
 <div class="contact">
@@ -20,8 +21,12 @@ custom_css: contact
             <label for="message">Message</label>
             <textarea name="message"></textarea>
         </p>
-        <input type="submit" value="Send">
+
+        <input class="btn" type="submit" value="Send" />
         <input type="hidden" name="_next" value="{{site.baseurl}}/contact/?success=1" />
         <input type="hidden" name="_subject" value="Request" />
+
+        <div class="clear">
+        </div>
     </form>
 </div>
