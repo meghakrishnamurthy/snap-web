@@ -217,14 +217,30 @@ pre {
  * Utility classes
  */
 
- .gray {
-     color: $grey-color;
- }
+.gray {
+    color: $grey-color;
+}
 
- .gray-dark {
-     color: $grey-color-dark;
- }
+.gray-dark {
+    color: $grey-color-dark;
+}
 
- .gray-light {
-     color: $grey-color-light
- }
+.gray-light {
+    color: $grey-color-light
+}
+
+.large {
+    font-size: large;
+}
+
+.larger {
+    font-size: larger;
+}
+
+.small {
+    font-size: small;
+}
+
+.smaller {
+    font-size: smaller;
+}
