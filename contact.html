@@ -31,8 +31,8 @@ show_title: true
 
         <input class="btn" type="submit" value="Send" />
         <input type="hidden" name="_next" value="{{site.baseurl}}/contact/?success=1&amp;request_id={{request_id}}" />
-        <input type="hidden" name="_subject" value="Request" />
-        <input type="hidden" name="unique_id" value="{{request_id}}" />
+        <input type="hidden" name="_subject" value="Request - {{request_id}}" />
+        <input type="hidden" name="request_id" value="{{request_id}}" />
         <div class="clear">
         </div>
     </form>
