@@ -7,6 +7,10 @@
 
     {% include header.html %}
 
+    {% if page.show_site_cover %}
+        {% include site_cover.html %}
+    {% endif %}
+    
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
