@@ -212,3 +212,19 @@ pre {
         width: 100px;
     }
 }
+
+/**
+ * Utility classes
+ */
+
+ .gray {
+     color: $grey-color;
+ }
+
+ .gray-dark {
+     color: $grey-color-dark;
+ }
+
+ .gray-light {
+     color: $grey-color-light
+ }
