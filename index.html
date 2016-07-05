@@ -3,33 +3,36 @@ layout: page
 title: MK Photography
 permalink: /
 images:
-  - image_path: /images/candid/1.jpg
-    thumbnail_path: /images/candid/1s.jpg
-    title: 1
-  - image_path: /images/candid/2.jpg
-    thumbnail_path: /images/candid/2s.jpg
-    title: 2
-  - image_path: /images/candid/3.jpg
-    thumbnail_path: /images/candid/3s.jpg
-    title: 3
-  - image_path: /images/candid/4.jpg
-    thumbnail_path: /images/candid/4s.jpg
-    title: 4
-  - image_path: /images/candid/5.jpg
-    thumbnail_path: /images/candid/5s.jpg
-    title: 5
-  - image_path: /images/candid/6.jpg
-    thumbnail_path: /images/candid/6s.jpg
-    title: 6
-  - image_path: /images/candid/7.jpg
-    thumbnail_path: /images/candid/7s.jpg
-    title: 7
-  - image_path: /images/candid/8.jpg
-    thumbnail_path: /images/candid/8s.jpg
-    title: 8
-  - image_path: /images/candid/9.jpg
-    thumbnail_path: /images/candid/9s.jpg
-    title: 9
+    - image_path: /images/candid/1.jpg
+      thumbnail_path: /images/candid/1s.jpg
+      title: 1
+    - image_path: /images/candid/7.jpg
+      thumbnail_path: /images/candid/7s.jpg
+      title: 7
+    - image_path: /images/candid/14.jpg
+      thumbnail_path: /images/candid/14s.jpg
+      title: 8
+    - image_path: /images/candid/15.jpg
+      thumbnail_path: /images/candid/15s.jpg
+      title: 9
+    - image_path: /images/events/birthday/7.jpg
+      thumbnail_path: /images/events/birthday/7s.jpg
+      title: 3
+    - image_path: /images/events/corporate/2.jpg
+      thumbnail_path: /images/events/corporate/2s.jpg
+      title: 3
+    - image_path: /images/events/wedding/1.jpg
+      thumbnail_path: /images/events/wedding/1s.jpg
+      title: 3
+    - image_path: /images/events/wedding/2.jpg
+      thumbnail_path: /images/events/wedding/2s.jpg
+      title: 3
+    - image_path: /images/events/wedding/4.jpg
+      thumbnail_path: /images/events/wedding/4s.jpg
+      title: 3
+    - image_path: /images/events/wedding/5.jpg
+      thumbnail_path: /images/events/wedding/5s.jpg
+      title: 3
 custom_css: home
 custom_js:
     - gallery
@@ -40,7 +43,7 @@ custom_js:
     <div class="photo-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         {% for image in page.images %}
             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="{{site.baseurl}}{{image.image_path}}" itemprop="contentUrl" data-size="600x400">
+                <a href="{{site.baseurl}}{{image.image_path}}" itemprop="contentUrl" data-size="1024x768">
                     <img src="{{site.baseurl}}{{ image.thumbnail_path}}" itemprop="thumbnail" alt="{{image.title}}" />
                 </a>
                 <figcaption itemprop="caption description">{{image.title}}</figcaption>
