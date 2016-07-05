@@ -25,11 +25,17 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+
+          {% if site.500px_username %}
+          <li>
+            {% include icon-500px.html username=site.500px_username %}
+          </li>
+          {% endif %}
         </ul>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+        <p class="site-desc">{{ site.description }}</p>
       </div>
     </div>
 
