@@ -13,6 +13,7 @@ baseurl: "/snap-web"
 url: "http://meghaphotography.com" # the base hostname & protocol for your site
 twitter_username:
 github_username:
+500px_username: "maggie9in"
 
 # Build settings
 markdown: kramdown
