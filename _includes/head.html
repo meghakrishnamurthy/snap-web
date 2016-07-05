@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/common.css" | prepend: site.baseurl }}" media="screen" type="text/css">
 
+  {% if page.show_site_cover %}
+      <link rel="stylesheet" href="{{ "/css/cover.css" | prepend: site.baseurl }}" media="screen" type="text/css">
+  {% endif %}
+
   {% if page.custom_css %}
     {% for stylesheet in page.custom_css %}
         <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ stylesheet }}.css" media="screen" type="text/css">
