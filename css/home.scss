@@ -10,10 +10,10 @@
     }
 
     figure {
-      display: block;
-      float: left;
-      margin: 0 5px 5px 0;
-      width: 150px;
+      display: inline-block;
+      margin: 25px;
+      width: calc(50% - 53px);
+      box-sizing: border-box;
     }
 
     figcaption {

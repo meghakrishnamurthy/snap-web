@@ -45,9 +45,9 @@ custom_js:
 
 <div class="home">
     <div class="photo-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-        {% for image in page.images %}
+        {% for image in page.images | sample %}
             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="{{site.baseurl}}{{image.image_path}}" itemprop="contentUrl" data-size="1024x768">
+                <a href="{{site.baseurl}}{{image.image_path}}" itemprop="contentUrl" data-size="1200x800">
                     <img src="{{site.baseurl}}{{ image.thumbnail_path}}" itemprop="thumbnail" alt="{{image.title}}" />
                 </a>
                 <figcaption itemprop="caption description">{{image.title}}</figcaption>
