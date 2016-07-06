@@ -6,3 +6,10 @@ function getUrlParameter (name, url) {
     var results = regex.exec(url);
     return results === null ? null : results[1];
 }
+
+(function () {
+    var host = 'meghaviphotography.com';
+    if ((host === window.location.host) && (window.location.protocol !== "https:")) {
+        window.location.protocol = "https";
+    }
+})();
